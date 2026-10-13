@@ -92,7 +92,7 @@ export default Plugin.define({
             return { content: `mermaid render failed: ${result.err || `exit ${result.code}`}` }
           }
           const popup = spawn(
-            "python3",
+            "/usr/bin/python3",
             [join(root, "popup.py"), png, "--source", mmd, "--title", title],
             { detached: true, stdio: "ignore" },
           )
