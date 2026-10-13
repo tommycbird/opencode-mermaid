@@ -1,0 +1,7 @@
+allowBuilds:
+  puppeteer: set this to true or false
+minimumReleaseAgeExclude:
+  - mermaid@12.2.0
+# standalone project: prevents pnpm from attaching to a parent workspace
+overrides:
+  mermaid: ^12.2.0
